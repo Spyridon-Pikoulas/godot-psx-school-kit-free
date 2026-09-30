@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://addons/psx_school_kit/models/handprints_small_model.glb" id="1"]
+
+[sub_resource type="BoxShape3D" id="box0"]
+size = Vector3(0.3844, 0.4802, 0.0050)
+
+[node name="handprints_small" instance=ExtResource("1")]
+
+[node name="Collision" type="StaticBody3D" parent="handprints_small"]
+
+[node name="Box" type="CollisionShape3D" parent="handprints_small/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1461, 0.9672, 0.0030)
+shape = SubResource("box0")

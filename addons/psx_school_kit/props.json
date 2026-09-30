@@ -1,0 +1,941 @@
+{
+ "atlas": 1024,
+ "atlas_used": 256,
+ "fps": 30,
+ "props": [
+  {
+   "name": "floor_vct",
+   "title": "Tile Floor",
+   "group": "floors",
+   "place": "floor",
+   "note": "2 x 2 m of vinyl tile, the classrooms' and corridors'",
+   "tris": 8,
+   "size": [
+    2.0,
+    2.0,
+    0.0
+   ],
+   "min": [
+    -1.0,
+    -1.0,
+    0.0
+   ],
+   "max": [
+    1.0,
+    1.0,
+    0.0
+   ],
+   "parts": [
+    {
+     "name": "floor_vct",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 8,
+     "min": [
+      -1.0,
+      -1.0,
+      0.0
+     ],
+     "max": [
+      1.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "ceiling_tiles",
+   "title": "Ceiling Tiles",
+   "group": "ceilings",
+   "place": "floor",
+   "note": "hangs at 3 m",
+   "tris": 8,
+   "size": [
+    2.0,
+    2.0,
+    0.0
+   ],
+   "min": [
+    -1.0,
+    -1.0,
+    3.0
+   ],
+   "max": [
+    1.0,
+    1.0,
+    3.0
+   ],
+   "parts": [
+    {
+     "name": "ceiling_tiles",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 8,
+     "min": [
+      -1.0,
+      -1.0,
+      3.0
+     ],
+     "max": [
+      1.0,
+      1.0,
+      3.0
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "wall_class",
+   "title": "Classroom Wall",
+   "group": "walls",
+   "place": "floor",
+   "note": "blue below a chair rail, sage above",
+   "tris": 28,
+   "size": [
+    2.0,
+    0.2,
+    3.0
+   ],
+   "min": [
+    -1.0,
+    -0.1,
+    0.0
+   ],
+   "max": [
+    1.0,
+    0.1,
+    3.0
+   ],
+   "parts": [
+    {
+     "name": "wall_class",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 28,
+     "min": [
+      -1.0,
+      -0.1,
+      0.0
+     ],
+     "max": [
+      1.0,
+      0.1,
+      3.0
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "wall_class_crayon",
+   "title": "Drawn-On Wall",
+   "group": "walls",
+   "place": "floor",
+   "note": "crayon on its front, at a child's height",
+   "tris": 28,
+   "size": [
+    2.0,
+    0.2,
+    3.0
+   ],
+   "min": [
+    -1.0,
+    -0.1,
+    0.0
+   ],
+   "max": [
+    1.0,
+    0.1,
+    3.0
+   ],
+   "parts": [
+    {
+     "name": "wall_class_crayon",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 28,
+     "min": [
+      -1.0,
+      -0.1,
+      0.0
+     ],
+     "max": [
+      1.0,
+      0.1,
+      3.0
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "wall_doorway_class",
+   "title": "Classroom Doorway",
+   "group": "walls",
+   "place": "floor",
+   "note": "the corridor in front, the classroom behind",
+   "tris": 56,
+   "size": [
+    2.0,
+    0.2,
+    3.0
+   ],
+   "min": [
+    -1.0,
+    -0.1,
+    0.0
+   ],
+   "max": [
+    1.0,
+    0.1,
+    3.0
+   ],
+   "parts": [
+    {
+     "name": "wall_doorway_class",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 20,
+     "min": [
+      -1.0,
+      -0.1,
+      0.0
+     ],
+     "max": [
+      -0.5,
+      0.1,
+      3.0
+     ]
+    },
+    {
+     "name": "wall_doorway_class_1",
+     "parent": "wall_doorway_class",
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 16,
+     "min": [
+      -0.5,
+      -0.1,
+      2.2
+     ],
+     "max": [
+      0.5,
+      0.1,
+      3.0
+     ]
+    },
+    {
+     "name": "wall_doorway_class_2",
+     "parent": "wall_doorway_class",
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 20,
+     "min": [
+      0.5,
+      -0.1,
+      0.0
+     ],
+     "max": [
+      1.0,
+      0.1,
+      3.0
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "wall_window_class",
+   "title": "Classroom Window Wall",
+   "group": "walls",
+   "place": "floor",
+   "note": "fits the classroom windows; brick outside",
+   "tris": 68,
+   "size": [
+    2.0,
+    0.2,
+    3.0
+   ],
+   "min": [
+    -1.0,
+    -0.1,
+    0.0
+   ],
+   "max": [
+    1.0,
+    0.1,
+    3.0
+   ],
+   "parts": [
+    {
+     "name": "wall_window_class",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 20,
+     "min": [
+      -1.0,
+      -0.1,
+      0.0
+     ],
+     "max": [
+      -0.8,
+      0.1,
+      3.0
+     ]
+    },
+    {
+     "name": "wall_window_class_1",
+     "parent": "wall_window_class",
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 12,
+     "min": [
+      -0.8,
+      -0.1,
+      0.0
+     ],
+     "max": [
+      0.8,
+      0.1,
+      0.9
+     ]
+    },
+    {
+     "name": "wall_window_class_2",
+     "parent": "wall_window_class",
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 16,
+     "min": [
+      -0.8,
+      -0.1,
+      2.5
+     ],
+     "max": [
+      0.8,
+      0.1,
+      3.0
+     ]
+    },
+    {
+     "name": "wall_window_class_3",
+     "parent": "wall_window_class",
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 20,
+     "min": [
+      0.8,
+      -0.1,
+      0.0
+     ],
+     "max": [
+      1.0,
+      0.1,
+      3.0
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "wall_post_class",
+   "title": "Classroom Post",
+   "group": "walls",
+   "place": "floor",
+   "note": "fills the corner where walls meet",
+   "tris": 26,
+   "size": [
+    0.2,
+    0.2,
+    3.0
+   ],
+   "min": [
+    -0.1,
+    -0.1,
+    0.0
+   ],
+   "max": [
+    0.1,
+    0.1,
+    3.0
+   ],
+   "parts": [
+    {
+     "name": "wall_post_class",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 26,
+     "min": [
+      -0.1,
+      -0.1,
+      0.0
+     ],
+     "max": [
+      0.1,
+      0.1,
+      3.0
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "door_classroom",
+   "title": "Classroom Door",
+   "group": "doors",
+   "place": "floor",
+   "note": "room 12, a vision panel; swings open",
+   "tris": 96,
+   "size": [
+    1.14,
+    0.24,
+    2.27
+   ],
+   "min": [
+    -0.57,
+    -0.12,
+    0.0
+   ],
+   "max": [
+    0.57,
+    0.12,
+    2.27
+   ],
+   "parts": [
+    {
+     "name": "door_classroom",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 12,
+     "min": [
+      -0.57,
+      -0.12,
+      0.0
+     ],
+     "max": [
+      -0.49,
+      0.12,
+      2.27
+     ]
+    },
+    {
+     "name": "door_classroom_casing_r",
+     "parent": "door_classroom",
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 12,
+     "min": [
+      0.49,
+      -0.12,
+      0.0
+     ],
+     "max": [
+      0.57,
+      0.12,
+      2.27
+     ]
+    },
+    {
+     "name": "door_classroom_casing_top",
+     "parent": "door_classroom",
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 12,
+     "min": [
+      -0.51,
+      -0.12,
+      2.19
+     ],
+     "max": [
+      0.51,
+      0.12,
+      2.26
+     ]
+    },
+    {
+     "name": "door_classroom_leaf",
+     "parent": "door_classroom",
+     "pivot": [
+      -0.48,
+      0.0,
+      0.0
+     ],
+     "tris": 60,
+     "min": [
+      -0.48,
+      -0.0675,
+      0.01
+     ],
+     "max": [
+      0.48,
+      0.0675,
+      2.19
+     ]
+    }
+   ],
+   "anims": [
+    {
+     "name": "open",
+     "seconds": 2.4,
+     "loop": false
+    }
+   ]
+  },
+  {
+   "name": "window_class",
+   "title": "Classroom Window",
+   "group": "windows",
+   "place": "floor",
+   "note": "its top light tips open; in a window wall",
+   "tris": 144,
+   "size": [
+    1.76,
+    0.3,
+    1.61
+   ],
+   "min": [
+    -0.88,
+    -0.17,
+    0.89
+   ],
+   "max": [
+    0.88,
+    0.13,
+    2.5
+   ],
+   "parts": [
+    {
+     "name": "window_class",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 80,
+     "min": [
+      -0.88,
+      -0.17,
+      0.89
+     ],
+     "max": [
+      0.88,
+      0.13,
+      2.5
+     ]
+    },
+    {
+     "name": "window_class_hopper",
+     "parent": "window_class",
+     "pivot": [
+      0.0,
+      0.0,
+      2.025
+     ],
+     "tris": 64,
+     "min": [
+      -0.75,
+      -0.045,
+      2.025
+     ],
+     "max": [
+      0.75,
+      0.02,
+      2.45
+     ]
+    }
+   ],
+   "anims": [
+    {
+     "name": "open",
+     "seconds": 1.8,
+     "loop": false
+    }
+   ]
+  },
+  {
+   "name": "chalkboard_written",
+   "title": "Written Chalkboard",
+   "group": "classroom",
+   "place": "wall",
+   "note": "I WILL NOT LEAVE, over and over",
+   "tris": 132,
+   "size": [
+    2.48,
+    0.08,
+    1.28
+   ],
+   "min": [
+    -1.24,
+    -0.08,
+    0.86
+   ],
+   "max": [
+    1.24,
+    0.0,
+    2.14
+   ],
+   "parts": [
+    {
+     "name": "chalkboard_written",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 132,
+     "min": [
+      -1.24,
+      -0.08,
+      0.86
+     ],
+     "max": [
+      1.24,
+      0.0,
+      2.14
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "student_desk",
+   "title": "Pupil's Desk",
+   "group": "classroom",
+   "place": "floor",
+   "note": "its lid lifts",
+   "tris": 196,
+   "size": [
+    0.62,
+    0.47,
+    0.787
+   ],
+   "min": [
+    -0.31,
+    -0.235,
+    -0.0
+   ],
+   "max": [
+    0.31,
+    0.235,
+    0.787
+   ],
+   "parts": [
+    {
+     "name": "student_desk",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 144,
+     "min": [
+      -0.3,
+      -0.225,
+      -0.0004
+     ],
+     "max": [
+      0.3,
+      0.225,
+      0.75
+     ]
+    },
+    {
+     "name": "student_desk_lid",
+     "parent": "student_desk",
+     "pivot": [
+      0.0,
+      0.235,
+      0.765
+     ],
+     "tris": 52,
+     "min": [
+      -0.31,
+      -0.235,
+      0.755
+     ],
+     "max": [
+      0.31,
+      0.235,
+      0.787
+     ]
+    }
+   ],
+   "anims": [
+    {
+     "name": "open",
+     "seconds": 1.4,
+     "loop": false
+    }
+   ]
+  },
+  {
+   "name": "student_chair",
+   "title": "Pupil's Chair",
+   "group": "classroom",
+   "place": "floor",
+   "note": "moulded plastic on a tube frame",
+   "tris": 104,
+   "size": [
+    0.38,
+    0.426,
+    0.781
+   ],
+   "min": [
+    -0.19,
+    -0.18,
+    -0.0
+   ],
+   "max": [
+    0.19,
+    0.246,
+    0.781
+   ],
+   "parts": [
+    {
+     "name": "student_chair",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 104,
+     "min": [
+      -0.19,
+      -0.18,
+      -0.0002
+     ],
+     "max": [
+      0.19,
+      0.2458,
+      0.7808
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "school_clock",
+   "title": "School Clock",
+   "group": "classroom",
+   "place": "wall",
+   "note": "its hand runs backwards",
+   "tris": 68,
+   "size": [
+    0.34,
+    0.062,
+    0.34
+   ],
+   "min": [
+    -0.17,
+    -0.062,
+    2.28
+   ],
+   "max": [
+    0.17,
+    0.0,
+    2.62
+   ],
+   "parts": [
+    {
+     "name": "school_clock",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 56,
+     "min": [
+      -0.17,
+      -0.058,
+      2.28
+     ],
+     "max": [
+      0.17,
+      0.0,
+      2.62
+     ]
+    },
+    {
+     "name": "school_clock_hand",
+     "parent": "school_clock",
+     "pivot": [
+      0.0,
+      -0.06,
+      2.45
+     ],
+     "tris": 12,
+     "min": [
+      -0.004,
+      -0.062,
+      2.445
+     ],
+     "max": [
+      0.004,
+      -0.058,
+      2.575
+     ]
+    }
+   ],
+   "anims": [
+    {
+     "name": "spin",
+     "seconds": 4.0,
+     "loop": true
+    }
+   ]
+  },
+  {
+   "name": "ceiling_light",
+   "title": "Ceiling Light",
+   "group": "lights",
+   "place": "floor",
+   "note": "a fluorescent panel",
+   "tris": 12,
+   "size": [
+    1.22,
+    0.62,
+    0.08
+   ],
+   "min": [
+    -0.61,
+    -0.31,
+    2.92
+   ],
+   "max": [
+    0.61,
+    0.31,
+    3.0
+   ],
+   "parts": [
+    {
+     "name": "ceiling_light",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 12,
+     "min": [
+      -0.61,
+      -0.31,
+      2.92
+     ],
+     "max": [
+      0.61,
+      0.31,
+      3.0
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "handprints_small",
+   "title": "Small Handprints",
+   "group": "mess",
+   "place": "wall",
+   "note": "a child's, low on the wall",
+   "tris": 32,
+   "size": [
+    0.384,
+    0.0,
+    0.48
+   ],
+   "min": [
+    -0.046,
+    -0.003,
+    0.727
+   ],
+   "max": [
+    0.338,
+    -0.003,
+    1.207
+   ],
+   "parts": [
+    {
+     "name": "handprints_small",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 32,
+     "min": [
+      -0.0461,
+      -0.003,
+      0.7271
+     ],
+     "max": [
+      0.3383,
+      -0.003,
+      1.2073
+     ]
+    }
+   ],
+   "anims": []
+  }
+ ]
+}
