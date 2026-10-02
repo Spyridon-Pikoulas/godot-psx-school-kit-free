@@ -44,6 +44,10 @@ For the full PS1 look, [PSX Look](https://heyheythere.itch.io/psx-look) turns th
 level) over in one line: wobbling vertices, warping textures, 240p, dither and 15-bit colour. Its
 [free sampler](https://heyheythere.itch.io/psx-look-free) has the vertex snap and affine textures.
 
+For the sound of it, [PSX Horror SFX](https://heyheythere.itch.io/psx-horror-sfx) has footsteps
+on concrete, tile and metal, creaking doors, creatures, stingers and the typewriter save,
+PS1-style ([30 free](https://heyheythere.itch.io/psx-horror-sfx-free)).
+
 ### License
 
 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): use them in any game, commercial or
